@@ -1,0 +1,100 @@
+{
+ "audio": "audios/r3-final.wav",
+ "words": "audios/r3-final.words.json",
+ "out": "criativos/c03-mecanismo.mp4",
+ "fix": {
+  "6": "6º",
+  "grau": ""
+ },
+ "keywords": [
+  "boca",
+  "cospe",
+  "chora",
+  "papinha",
+  "bebê",
+  "bom",
+  "garfo",
+  "300",
+  "idade",
+  "cardápio",
+  "compras",
+  "textura",
+  "engasgo",
+  "alergênicos",
+  "caro",
+  "exatamente",
+  "culpa",
+  "clica",
+  "2",
+  "mil",
+  "trava",
+  "errada",
+  "recusar",
+  "você",
+  "caminho",
+  "receita",
+  "7",
+  "bônus",
+  "30"
+ ],
+ "end_cta": "TOQUE EM SAIBA MAIS 👇",
+ "clips": [
+  {
+   "at": 0.0,
+   "take": "t2",
+   "in": 52.0
+  },
+  {
+   "at": 2.5,
+   "take": "t3",
+   "in": 83.0
+  },
+  {
+   "at": 5.18,
+   "take": "t1",
+   "in": 12.0
+  },
+  {
+   "at": 7.46,
+   "take": "t4",
+   "in": 31.0,
+   "crop": "top"
+  },
+  {
+   "at": 9.8,
+   "take": "t6",
+   "in": 29.3
+  },
+  {
+   "at": 12.94,
+   "take": "t4",
+   "in": 43.5,
+   "crop": "top",
+   "h": 0.5,
+   "dy": 40
+  },
+  {
+   "at": 15.28,
+   "take": "t3",
+   "in": 13.0
+  },
+  {
+   "at": 18.52,
+   "image": "tools/assets/hero-kit.png"
+  },
+  {
+   "at": 20.5,
+   "take": "t2",
+   "in": 33.0
+  },
+  {
+   "at": 22.3,
+   "take": "t5",
+   "in": 52.0
+  },
+  {
+   "at": 24.02,
+   "image": "tools/assets/kit-completo.png"
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "audio": "audios/r2-final.wav",
+ "words": "audios/r2-final.words.json",
+ "out": "criativos/c02-depoimento.mp4",
+ "fix": {},
+ "keywords": [
+  "boca",
+  "cospe",
+  "chora",
+  "papinha",
+  "bebê",
+  "bom",
+  "garfo",
+  "300",
+  "idade",
+  "cardápio",
+  "compras",
+  "textura",
+  "engasgo",
+  "alergênicos",
+  "caro",
+  "exatamente",
+  "culpa",
+  "clica",
+  "2",
+  "mil",
+  "trava",
+  "errada",
+  "recusar",
+  "você",
+  "caminho",
+  "receita",
+  "7",
+  "bônus",
+  "30"
+ ],
+ "end_cta": "TOQUE EM SAIBA MAIS 👇",
+ "clips": [
+  {
+   "at": 0.0,
+   "take": "t4",
+   "in": 43.5,
+   "crop": "top",
+   "h": 0.5,
+   "dy": 40
+  },
+  {
+   "at": 3.9,
+   "take": "t1",
+   "in": 0.0
+  },
+  {
+   "at": 4.9,
+   "take": "t4",
+   "in": 46.5,
+   "crop": "top",
+   "h": 0.5,
+   "dy": 40
+  },
+  {
+   "at": 6.38,
+   "take": "t4",
+   "in": 31.0,
+   "crop": "top"
+  },
+  {
+   "at": 8.0,
+   "take": "t1",
+   "in": 20.0
+  },
+  {
+   "at": 9.9,
+   "image": "tools/assets/hero-kit.png"
+  },
+  {
+   "at": 11.86,
+   "take": "t3",
+   "in": 47.0
+  },
+  {
+   "at": 14.0,
+   "take": "t8",
+   "in": 2.0
+  },
+  {
+   "at": 16.36,
+   "take": "t5",
+   "in": 52.0
+  },
+  {
+   "at": 19.0,
+   "take": "t2",
+   "in": 33.0
+  },
+  {
+   "at": 21.0,
+   "take": "t3",
+   "in": 24.0,
+   "crop": "top"
+  },
+  {
+   "at": 23.06,
+   "take": "t9",
+   "in": 4.0,
+   "crop": "top"
+  },
+  {
+   "at": 25.78,
+   "take": "t3",
+   "in": 83.0
+  },
+  {
+   "at": 28.4,
+   "take": "t6",
+   "in": 52.0
+  },
+  {
+   "at": 30.22,
+   "image": "tools/assets/kit-completo.png"
+  }
+ ]
+}
