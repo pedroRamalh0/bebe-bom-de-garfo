@@ -12,4 +12,5 @@
 | t8 | ssstik_1791752917410 | 34s | Sopinha de carne na pressão, sem fala | 2-5 legumes na pressão · 6-19 refogado/carne · 24-29 caldo · 30-31 tigela | Mixer 22-23s; texto 32-33s |
 | t9 | amandaadamiu | 31s | Bolinho de laranja (sem fala) | 0-2 e 30 bolinho pronto · 4-17 ovo, laranja, ingredientes · 18-29 misturando | Legendas na tela; tem fermento |
 
+| t10 | ssstik_1795563515247 | 63s | 3 formas de amassar a comida do bebê (mulher falando) | 0-2 forminhas coloridas · 17-22 amassador de batata na abóbora · 21-22 forminha de congelar · 25-32 amassador de papinha · 36-46 DOIS GARFOS amassando cenoura (prova do "amassar, não bater") | Rosto da apresentadora 4-16 e 33-35, 47-62 (não usar com voz de outra mãe); legendas na tela |
 Regra: não usar cenas de liquidificador/mixer como "jeito certo" (o livro ensina amassar com garfo).
