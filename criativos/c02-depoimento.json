@@ -38,27 +38,21 @@
  "clips": [
   {
    "at": 0.0,
-   "take": "t4",
-   "in": 43.5,
-   "crop": "top",
-   "h": 0.5,
-   "dy": 40
+   "take": "t1",
+   "in": 13.0
+  },
+  {
+   "at": 2.6,
+   "take": "t1",
+   "in": 21.0
   },
   {
    "at": 3.9,
-   "take": "t1",
-   "in": 0.0
+   "take": "t8",
+   "in": 30.0
   },
   {
    "at": 4.9,
-   "take": "t4",
-   "in": 46.5,
-   "crop": "top",
-   "h": 0.5,
-   "dy": 40
-  },
-  {
-   "at": 6.38,
    "take": "t4",
    "in": 31.0,
    "crop": "top"
@@ -66,53 +60,58 @@
   {
    "at": 8.0,
    "take": "t1",
-   "in": 20.0
+   "in": 22.3
   },
   {
    "at": 9.9,
-   "image": "tools/assets/hero-kit.png"
+   "image": "tools/assets/kit-completo.png"
   },
   {
    "at": 11.86,
    "take": "t3",
-   "in": 47.0
+   "in": 3.0,
+   "crop": "top"
   },
   {
    "at": 14.0,
-   "take": "t8",
-   "in": 2.0
+   "take": "t7",
+   "in": 6.0
   },
   {
    "at": 16.36,
-   "take": "t5",
-   "in": 52.0
+   "take": "t9",
+   "in": 4.0,
+   "crop": "top",
+   "h": 0.75
   },
   {
    "at": 19.0,
-   "take": "t2",
-   "in": 33.0
+   "take": "t10",
+   "in": 37.0,
+   "crop": "top",
+   "h": 0.4,
+   "dy": 600
   },
   {
    "at": 21.0,
    "take": "t3",
-   "in": 24.0,
+   "in": 25.0,
    "crop": "top"
   },
   {
    "at": 23.06,
-   "take": "t9",
-   "in": 4.0,
-   "crop": "top"
+   "take": "t7",
+   "in": 19.0
   },
   {
    "at": 25.78,
-   "take": "t3",
-   "in": 83.0
+   "take": "t6",
+   "in": 3.0
   },
   {
    "at": 28.4,
    "take": "t6",
-   "in": 52.0
+   "in": 55.0
   },
   {
    "at": 30.22,
