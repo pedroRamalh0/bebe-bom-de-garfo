@@ -2,10 +2,13 @@
  "audio": "audios/audio1-final.wav",
  "words": "audios/audio1-final.words.json",
  "out": "criativos/c01-sogra.mp4",
+ "hook": "ELE NÃO COMIA\\NCOMIGO 😢",
+ "hook_until": 3.2,
+ "end_at": 58.3,
+ "trans": 0.22,
  "fix": {
   "aprovado": "provado",
-  "entrava": "trava",
-  "guia": "guia"
+  "entrava": "trava"
  },
  "keywords": [
   "sogra",
@@ -15,12 +18,13 @@
   "papinha",
   "engasgo",
   "alergia",
-  "bebê",
-  "bom",
-  "garfo",
+  "Bebê",
+  "Bom",
+  "Garfo",
   "300",
   "textura",
   "primeiro",
+  "boca",
   "tudo",
   "nove",
   "cardápio",
@@ -28,113 +32,225 @@
   "coragem",
   "sozinho",
   "certo",
-  "clica",
-  "amanhã"
+  "clica"
  ],
- "end_cta": "TOQUE EM SAIBA MAIS 👇",
  "clips": [
   {
    "at": 0.0,
    "take": "t4",
-   "in": 43.5,
-   "crop": "top",
-   "h": 0.5,
-   "dy": 40,
-   "dx": 0
+   "in": 42.2,
+   "blur": [
+    [
+     0.62,
+     0.76
+    ]
+   ],
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "y": 0.3
   },
   {
    "at": 3.28,
    "take": "t4",
-   "in": 46.5,
-   "crop": "top",
-   "h": 0.5,
-   "dy": 40,
-   "dx": 0
+   "in": 47.6,
+   "blur": [
+    [
+     0.62,
+     0.76
+    ]
+   ],
+   "zoom": [
+    1.04,
+    1.12
+   ],
+   "y": 0.25,
+   "t": "fadeblack"
   },
   {
    "at": 6.1,
    "take": "t1",
-   "in": 12.0
+   "in": 12.2,
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 7.92,
    "take": "t1",
-   "in": 20.0
+   "in": 20.2,
+   "zoom": [
+    1.0,
+    1.08
+   ]
   },
   {
    "at": 11.28,
    "take": "t4",
-   "in": 31.0,
-   "crop": "top"
+   "in": 31.2,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "y": 0.6
   },
   {
    "at": 13.9,
-   "take": "t8",
-   "in": 6.0
+   "take": "t4",
+   "in": 35.9,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "y": 0.6
+  },
+  {
+   "at": 15.6,
+   "take": "t1",
+   "in": 3.4,
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 17.44,
    "take": "t3",
-   "in": 13.0
+   "in": 13.4,
+   "zoom": [
+    1.02,
+    1.08
+   ]
   },
   {
    "at": 20.9,
-   "image": "tools/assets/hero-kit.png"
+   "image": "tools/assets/reveal.png",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "t": "circleopen"
   },
   {
    "at": 23.56,
    "take": "t3",
-   "in": 47.0,
-   "crop": "full"
+   "in": 46.5,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "t": "slideleft"
   },
   {
    "at": 26.04,
    "take": "t2",
-   "in": 33.0
+   "in": 37.0,
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 28.02,
    "take": "t5",
-   "in": 25.0
+   "in": 26.0,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 31.42,
+   "take": "t10",
+   "in": 38.0,
+   "blur": [
+    [
+     0.5,
+     0.59
+    ]
+   ],
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 33.08,
    "take": "t1",
-   "in": 25.0
+   "in": 25.4,
+   "zoom": [
+    1.0,
+    1.08
+   ]
   },
   {
    "at": 35.94,
    "take": "t5",
-   "in": 52.0
+   "in": 53.0,
+   "zoom": [
+    1.0,
+    1.08
+   ]
   },
   {
    "at": 39.62,
    "take": "t2",
-   "in": 52.0
+   "in": 52.4,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "t": "slideleft"
   },
   {
    "at": 42.38,
-   "take": "t6",
-   "in": 41.0
+   "take": "t3",
+   "in": 60.6,
+   "zoom": [
+    1.0,
+    1.08
+   ]
   },
   {
    "at": 45.76,
    "take": "t6",
-   "in": 48.0
+   "in": 48.0,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "t": "fadewhite"
   },
   {
    "at": 50.6,
    "take": "t6",
-   "in": 52.8
+   "in": 52.8,
+   "zoom": [
+    1.04,
+    1.12
+   ]
   },
   {
    "at": 55.16,
    "take": "t1",
-   "in": 27.5
+   "in": 27.8,
+   "zoom": [
+    1.0,
+    1.08
+   ]
   },
   {
    "at": 58.32,
-   "image": "tools/assets/hero-kit.png"
+   "image": "tools/assets/endcard.png",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "t": "circleopen"
   }
- ]
+ ],
+ "music": "musica/life-of-riley.mp3",
+ "music_vol": 0.2
 }

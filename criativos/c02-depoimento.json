@@ -1,16 +1,16 @@
 {
- "audio": "audios/r2-final.wav",
- "words": "audios/r2-final.words.json",
- "out": "criativos/c02-depoimento.mp4",
- "fix": {},
+ "trans": 0.22,
+ "music": "musica/life-of-riley.mp3",
+ "music_vol": 0.2,
  "keywords": [
   "boca",
   "cospe",
   "chora",
   "papinha",
-  "bebê",
-  "bom",
-  "garfo",
+  "recusava",
+  "Bebê",
+  "Bom",
+  "Garfo",
   "300",
   "idade",
   "cardápio",
@@ -21,7 +21,7 @@
   "caro",
   "exatamente",
   "culpa",
-  "clica",
+  "Saiba",
   "2",
   "mil",
   "trava",
@@ -34,88 +34,190 @@
   "bônus",
   "30"
  ],
- "end_cta": "TOQUE EM SAIBA MAIS 👇",
+ "audio": "audios/r2-final.wav",
+ "words": "audios/r2-final.words.json",
+ "out": "criativos/c02-depoimento.mp4",
+ "hook": "ELE CUSPIA\\NTUDO 😩",
+ "hook_until": 3.0,
+ "end_at": 30.2,
+ "fix": {},
  "clips": [
   {
    "at": 0.0,
    "take": "t1",
-   "in": 13.0
+   "in": 9.3,
+   "zoom": [
+    1.0,
+    1.08
+   ]
   },
   {
-   "at": 2.6,
-   "take": "t1",
-   "in": 21.0
-  },
-  {
-   "at": 3.9,
-   "take": "t8",
-   "in": 30.0
+   "at": 2.4,
+   "take": "t4",
+   "in": 50.5,
+   "blur": [
+    [
+     0.62,
+     0.76
+    ]
+   ],
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "y": 0.3
   },
   {
    "at": 4.9,
+   "take": "t1",
+   "in": 21.5,
+   "zoom": [
+    1.02,
+    1.08
+   ],
+   "t": "fadeblack"
+  },
+  {
+   "at": 6.38,
    "take": "t4",
-   "in": 31.0,
-   "crop": "top"
+   "in": 36.5,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "y": 0.6
   },
   {
    "at": 8.0,
    "take": "t1",
-   "in": 22.3
+   "in": 5.5,
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 9.9,
-   "image": "tools/assets/kit-completo.png"
+   "image": "tools/assets/reveal.png",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "t": "circleopen"
   },
   {
    "at": 11.86,
-   "take": "t3",
+   "take": "t5",
    "in": 3.0,
-   "crop": "top"
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "t": "slideleft"
   },
   {
-   "at": 14.0,
+   "at": 13.9,
    "take": "t7",
-   "in": 6.0
+   "in": 6.0,
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 16.36,
-   "take": "t9",
-   "in": 4.0,
-   "crop": "top",
-   "h": 0.75
+   "take": "t8",
+   "in": 2.0,
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
-   "at": 19.0,
-   "take": "t10",
-   "in": 37.0,
-   "crop": "top",
-   "h": 0.4,
-   "dy": 600
+   "at": 18.0,
+   "take": "t9",
+   "in": 4.0,
+   "blur": [
+    [
+     0.8,
+     0.9
+    ]
+   ],
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 19.4,
+   "take": "t2",
+   "in": 46.0,
+   "zoom": [
+    1.0,
+    1.08
+   ]
   },
   {
    "at": 21.0,
    "take": "t3",
    "in": 25.0,
-   "crop": "top"
+   "blur": [
+    [
+     0.8,
+     0.92
+    ]
+   ],
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 23.06,
    "take": "t7",
-   "in": 19.0
+   "in": 19.5,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "t": "slideleft"
   },
   {
    "at": 25.78,
+   "take": "t8",
+   "in": 24.0,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 27.2,
    "take": "t6",
-   "in": 3.0
+   "in": 33.2,
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 28.4,
    "take": "t6",
-   "in": 55.0
+   "in": 54.5,
+   "zoom": [
+    1.02,
+    1.1
+   ],
+   "t": "fadewhite"
   },
   {
    "at": 30.22,
-   "image": "tools/assets/kit-completo.png"
+   "image": "tools/assets/endcard.png",
+   "zoom": [
+    1.0,
+    1.02
+   ],
+   "t": "circleopen"
   }
  ]
 }

@@ -1,19 +1,16 @@
 {
- "audio": "audios/r3-final.wav",
- "words": "audios/r3-final.words.json",
- "out": "criativos/c03-mecanismo.mp4",
- "fix": {
-  "6": "6º",
-  "grau": ""
- },
+ "trans": 0.22,
+ "music": "musica/life-of-riley.mp3",
+ "music_vol": 0.2,
  "keywords": [
   "boca",
   "cospe",
   "chora",
   "papinha",
-  "bebê",
-  "bom",
-  "garfo",
+  "recusava",
+  "Bebê",
+  "Bom",
+  "Garfo",
   "300",
   "idade",
   "cardápio",
@@ -24,7 +21,7 @@
   "caro",
   "exatamente",
   "culpa",
-  "clica",
+  "Saiba",
   "2",
   "mil",
   "trava",
@@ -37,66 +34,146 @@
   "bônus",
   "30"
  ],
- "end_cta": "TOQUE EM SAIBA MAIS 👇",
+ "audio": "audios/r3-final.wav",
+ "words": "audios/r3-final.words.json",
+ "out": "criativos/c03-mecanismo.mp4",
+ "hook": "POR QUE SEU\\NBEBÊ TRAVA? 🤔",
+ "hook_until": 3.2,
+ "end_at": 24.0,
+ "fix": {
+  "6": "6º",
+  "grau": ""
+ },
  "clips": [
   {
    "at": 0.0,
    "take": "t3",
-   "in": 50.0,
-   "crop": "top"
+   "in": 52.0,
+   "blur": [
+    [
+     0.8,
+     0.9
+    ]
+   ],
+   "zoom": [
+    1.0,
+    1.08
+   ]
   },
   {
-   "at": 2.5,
-   "take": "t3",
-   "in": 83.5
+   "at": 2.4,
+   "take": "t5",
+   "in": 57.0,
+   "zoom": [
+    1.0,
+    1.08
+   ]
   },
   {
    "at": 5.18,
    "take": "t1",
-   "in": 16.0
+   "in": 15.5,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "t": "fadeblack"
   },
   {
    "at": 7.46,
    "take": "t4",
-   "in": 35.5,
-   "crop": "top"
+   "in": 32.5,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "y": 0.6
   },
   {
    "at": 9.8,
    "take": "t6",
-   "in": 29.3
+   "in": 29.3,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 11.4,
+   "take": "t6",
+   "in": 37.3,
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 12.94,
    "take": "t4",
-   "in": 50.0,
-   "crop": "top",
-   "h": 0.5,
-   "dy": 40,
-   "dx": 144
+   "in": 51.5,
+   "blur": [
+    [
+     0.62,
+     0.76
+    ]
+   ],
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "y": 0.3
   },
   {
    "at": 15.28,
-   "take": "t5",
-   "in": 3.0
+   "take": "t3",
+   "in": 16.0,
+   "zoom": [
+    1.02,
+    1.08
+   ]
   },
   {
    "at": 18.52,
-   "image": "tools/assets/hero-kit.png"
+   "image": "tools/assets/reveal.png",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "t": "circleopen"
   },
   {
-   "at": 20.5,
-   "take": "t8",
-   "in": 10.0
+   "at": 20.6,
+   "take": "t10",
+   "in": 39.5,
+   "blur": [
+    [
+     0.5,
+     0.59
+    ]
+   ],
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "t": "slideleft"
   },
   {
    "at": 22.3,
    "take": "t2",
-   "in": 46.0
+   "in": 53.5,
+   "zoom": [
+    1.0,
+    1.06
+   ]
   },
   {
    "at": 24.02,
-   "image": "tools/assets/kit-completo.png"
+   "image": "tools/assets/endcard.png",
+   "zoom": [
+    1.0,
+    1.02
+   ],
+   "t": "circleopen"
   }
  ]
 }
