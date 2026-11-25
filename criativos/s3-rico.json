@@ -1,0 +1,343 @@
+{
+ "audio": "audios/s3-final.wav",
+ "words": "audios/s3-final.words.json",
+ "out": "criativos/s3-rico-primeiro-pure.mp4",
+ "tail": 1.2,
+ "pop_at": 5.0,
+ "fix": {
+  "bão": "BOM",
+  "gasgo": "ENGASGO",
+  "em": ""
+ },
+ "keywords": [
+  "comer",
+  "purê",
+  "três",
+  "anos",
+  "bebê",
+  "bom",
+  "garfo",
+  "300",
+  "fase",
+  "idade",
+  "textura",
+  "certa",
+  "cardápios",
+  "prontos",
+  "sos",
+  "engasgo",
+  "alergênicos",
+  "verdade",
+  "estresse",
+  "clica"
+ ],
+ "segments": [
+  {
+   "at": 0,
+   "type": "cuts",
+   "clips": [
+    [
+     "t2",
+     46.6,
+     0
+    ],
+    [
+     "S3-01",
+     2.5,
+     0.7
+    ],
+    [
+     "S2-02",
+     13.6,
+     1.4
+    ]
+   ],
+   "cap": 1380
+  },
+  {
+   "at": 2.22,
+   "type": "split",
+   "top": [
+    [
+     "S1-09",
+     54.0,
+     0
+    ]
+   ],
+   "bot": [
+    [
+     "t7",
+     26.8,
+     0,
+     0.45
+    ]
+   ],
+   "cap": 960
+  },
+  {
+   "at": 4.84,
+   "type": "cuts",
+   "clips": [
+    [
+     "S3-06",
+     16.0,
+     0
+    ]
+   ],
+   "cap": 1700
+  },
+  {
+   "at": 7.16,
+   "type": "bands",
+   "rows": [
+    [
+     [
+      "S1-09",
+      0.3,
+      0
+     ]
+    ],
+    [
+     [
+      "S1-05",
+      31.0,
+      0
+     ]
+    ],
+    [
+     [
+      "S3-06",
+      18.5,
+      0
+     ]
+    ],
+    [
+     [
+      "S1-02",
+      20.0,
+      0
+     ]
+    ]
+   ],
+   "starts": [
+    0,
+    0.7,
+    1.4,
+    2.1
+   ],
+   "cap": null
+  },
+  {
+   "at": 10.5,
+   "type": "cuts",
+   "clips": [
+    [
+     "telas/sumario.png",
+     0,
+     0
+    ],
+    [
+     "telas/sumario-toque.png",
+     0,
+     0.6
+    ],
+    [
+     "telas/fase2-receita.png",
+     0,
+     1.48
+    ]
+   ],
+   "cap": 1500
+  },
+  {
+   "at": 13.36,
+   "type": "cuts",
+   "clips": [
+    [
+     "t2",
+     48.5,
+     0
+    ]
+   ],
+   "cap": 1380
+  },
+  {
+   "at": 15.78,
+   "type": "cuts",
+   "clips": [
+    [
+     "telas/cardapio-9a11m.png",
+     0,
+     0
+    ],
+    [
+     "S1-02",
+     30.0,
+     1.32
+    ]
+   ],
+   "cap": 1380
+  },
+  {
+   "at": 19.16,
+   "type": "cuts",
+   "clips": [
+    [
+     "telas/sos-capa.png",
+     0,
+     0
+    ],
+    [
+     "telas/sos-pagina.png",
+     0,
+     1.14
+    ],
+    [
+     "telas/alerg-capa.png",
+     0,
+     2.32
+    ],
+    [
+     "telas/alerg-pagina.png",
+     0,
+     3.24
+    ]
+   ],
+   "cap": 1500
+  },
+  {
+   "at": 23.3,
+   "type": "cuts",
+   "clips": [
+    [
+     "t5",
+     25.0,
+     0
+    ]
+   ],
+   "cap": 1380
+  },
+  {
+   "at": 26.18,
+   "type": "cuts",
+   "clips": [
+    [
+     "t6",
+     52.5,
+     0
+    ]
+   ],
+   "cap": 1380
+  },
+  {
+   "at": 27.8,
+   "type": "still",
+   "img": "tools/assets/endcard.png",
+   "tr": "circleopen",
+   "cap": null
+  }
+ ],
+ "heads": [
+  {
+   "from": 0,
+   "to": 2.15,
+   "text": "DO 1º PURÊ AOS 3 ANOS"
+  }
+ ],
+ "tags": [
+  {
+   "from": 2.3,
+   "to": 4.8,
+   "text": "6 MESES · 1º PURÊ",
+   "style": "TagG",
+   "x": 40,
+   "y": 40
+  },
+  {
+   "from": 3.16,
+   "to": 4.8,
+   "text": "3 ANOS · COMIDA DA FAMÍLIA",
+   "style": "TagP",
+   "x": 40,
+   "y": 1010
+  },
+  {
+   "from": 7.16,
+   "to": 10.45,
+   "text": "6 MESES",
+   "style": "TagG",
+   "x": 40,
+   "y": 30
+  },
+  {
+   "from": 7.86,
+   "to": 10.45,
+   "text": "7–8 MESES",
+   "style": "TagO",
+   "x": 40,
+   "y": 512
+  },
+  {
+   "from": 8.56,
+   "to": 10.45,
+   "text": "9–11 MESES",
+   "style": "TagB",
+   "x": 40,
+   "y": 994
+  },
+  {
+   "from": 9.26,
+   "to": 10.45,
+   "text": "1–3 ANOS",
+   "style": "TagP",
+   "x": 40,
+   "y": 1476
+  }
+ ],
+ "checks": [
+  {
+   "at": 13.56,
+   "to": 19.0,
+   "text": "TEXTURA CERTA",
+   "y": 380
+  },
+  {
+   "at": 14.64,
+   "to": 19.0,
+   "text": "PASSO A PASSO",
+   "y": 480
+  },
+  {
+   "at": 15.78,
+   "to": 19.0,
+   "text": "CARDÁPIOS PRONTOS",
+   "y": 580
+  }
+ ],
+ "stickers": [
+  {
+   "from": 7.3,
+   "to": 10.4,
+   "text": "300 RECEITINHAS",
+   "x": 700,
+   "y": 250,
+   "rot": 6
+  },
+  {
+   "from": 19.3,
+   "to": 23.2,
+   "text": "+7 BÔNUS",
+   "x": 830,
+   "y": 260,
+   "rot": -8
+  },
+  {
+   "from": 28.3,
+   "to": 30.4,
+   "text": "+7 BÔNUS",
+   "x": 830,
+   "y": 700,
+   "rot": -10
+  }
+ ]
+}

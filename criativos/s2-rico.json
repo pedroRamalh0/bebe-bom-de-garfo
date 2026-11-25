@@ -1,0 +1,311 @@
+{
+ "audio": "audios/s2-final.wav",
+ "words": "audios/s2-final.words.json",
+ "out": "criativos/s2-rico-mesma-papinha.mp4",
+ "tail": 1.2,
+ "pop_at": 3.4,
+ "keywords": [
+  "mesma",
+  "papinha",
+  "bebê",
+  "bom",
+  "garfo",
+  "ideia",
+  "300",
+  "fáceis",
+  "idade",
+  "simples",
+  "cardápio",
+  "cortes",
+  "seguros",
+  "celular",
+  "30",
+  "reais",
+  "clica"
+ ],
+ "segments": [
+  {
+   "at": 0,
+   "type": "bands",
+   "rows": [
+    [
+     [
+      "t4",
+      31.2,
+      0
+     ]
+    ],
+    [
+     [
+      "t4",
+      32.0,
+      0
+     ]
+    ],
+    [
+     [
+      "t4",
+      32.8,
+      0
+     ]
+    ]
+   ],
+   "starts": [
+    0,
+    0,
+    0
+   ],
+   "cap": 1700
+  },
+  {
+   "at": 3.18,
+   "type": "cuts",
+   "clips": [
+    [
+     "S2-03",
+     15.0,
+     0
+    ],
+    [
+     "S3-04",
+     35.6,
+     0.62
+    ],
+    [
+     "t8",
+     29.2,
+     1.24
+    ],
+    [
+     "S2-05",
+     20.0,
+     2.4
+    ]
+   ],
+   "cap": 1700
+  },
+  {
+   "at": 6.82,
+   "type": "grid",
+   "cols": 3,
+   "rows": 3,
+   "cells": [
+    [
+     "S2-03",
+     4.5
+    ],
+    [
+     "S2-05",
+     3.0
+    ],
+    [
+     "S2-04",
+     6.5
+    ],
+    [
+     "S2-08",
+     3.5
+    ],
+    [
+     "S2-09",
+     6.0
+    ],
+    [
+     "S2-02",
+     3.5
+    ],
+    [
+     "S3-06",
+     16.0
+    ],
+    [
+     "t7",
+     19.5
+    ],
+    [
+     "S2-05",
+     15.0
+    ]
+   ],
+   "starts": [
+    0,
+    0,
+    0,
+    0.12,
+    0.24,
+    0.36,
+    0.48,
+    0.6,
+    0.72
+   ],
+   "cap": null
+  },
+  {
+   "at": 11.78,
+   "type": "cuts",
+   "clips": [
+    [
+     "t5",
+     48.2,
+     0
+    ],
+    [
+     "S1-09",
+     31.0,
+     0.88
+    ],
+    [
+     "S2-05",
+     26.5,
+     1.68
+    ],
+    [
+     "S2-09",
+     6.0,
+     2.5
+    ]
+   ],
+   "cap": null
+  },
+  {
+   "at": 15.66,
+   "type": "cuts",
+   "clips": [
+    [
+     "telas/cardapio-7a8m.png",
+     0,
+     0
+    ],
+    [
+     "telas/cortes.png",
+     0,
+     1.96
+    ]
+   ],
+   "cap": 1380
+  },
+  {
+   "at": 19.18,
+   "type": "still",
+   "img": "telas/celular-receita.png",
+   "cap": 1500
+  },
+  {
+   "at": 22.14,
+   "type": "still",
+   "img": "tools/assets/endcard.png",
+   "tr": "circleopen",
+   "cap": null
+  }
+ ],
+ "counter": {
+  "from": 6.9,
+  "reach": 8.06,
+  "to": 11.7,
+  "value": 300,
+  "y": 960
+ },
+ "heads": [
+  {
+   "from": 0,
+   "to": 3.1,
+   "text": "TODO DIA A MESMA PAPINHA?"
+  },
+  {
+   "from": 8.84,
+   "to": 11.7,
+   "text": "SEPARADAS POR IDADE",
+   "y": 1640
+  },
+  {
+   "from": 10.16,
+   "to": 11.7,
+   "text": "COM INGREDIENTES SIMPLES"
+  }
+ ],
+ "tags": [
+  {
+   "from": 0.5,
+   "to": 3.1,
+   "text": "DE NOVO...",
+   "style": "TagR",
+   "x": 40,
+   "y": 680
+  },
+  {
+   "from": 0.95,
+   "to": 3.1,
+   "text": "E DE NOVO...",
+   "style": "TagR",
+   "x": 40,
+   "y": 1320
+  },
+  {
+   "from": 15.7,
+   "to": 19.1,
+   "text": "BÔNUS INCLUSOS",
+   "style": "TagG",
+   "x": 40,
+   "y": 40
+  }
+ ],
+ "checks": [
+  {
+   "at": 16.26,
+   "to": 19.1,
+   "text": "CARDÁPIO DA SEMANA",
+   "y": 200
+  },
+  {
+   "at": 17.62,
+   "to": 19.1,
+   "text": "GUIA DE CORTES SEGUROS",
+   "y": 300
+  }
+ ],
+ "stickers": [
+  {
+   "from": 11.8,
+   "to": 12.66,
+   "text": "PAPINHAS",
+   "y": 860,
+   "rot": -5
+  },
+  {
+   "from": 12.66,
+   "to": 13.46,
+   "text": "SOPINHAS",
+   "y": 860,
+   "rot": 4
+  },
+  {
+   "from": 13.46,
+   "to": 14.28,
+   "text": "BOLINHOS",
+   "y": 860,
+   "rot": -5
+  },
+  {
+   "from": 14.28,
+   "to": 15.6,
+   "text": "E MUITO MAIS",
+   "y": 860,
+   "rot": 4
+  },
+  {
+   "from": 20.48,
+   "to": 22.1,
+   "text": "R$ 27,90",
+   "y": 1060,
+   "rot": -5
+  },
+  {
+   "from": 22.5,
+   "to": 25.2,
+   "text": "+7 BÔNUS",
+   "x": 830,
+   "y": 700,
+   "rot": -10
+  }
+ ]
+}
