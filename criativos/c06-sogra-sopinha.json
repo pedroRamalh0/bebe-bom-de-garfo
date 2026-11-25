@@ -1,0 +1,195 @@
+{
+ "trans": 0.25,
+ "music": "musica/life-of-riley.mp3",
+ "music_vol": 0.2,
+ "keywords": [
+  "boca",
+  "cospe",
+  "chora",
+  "papinha",
+  "recusava",
+  "Bebê",
+  "Bom",
+  "Garfo",
+  "300",
+  "idade",
+  "cardápio",
+  "compras",
+  "textura",
+  "engasgo",
+  "alergênicos",
+  "caro",
+  "exatamente",
+  "culpa",
+  "Saiba",
+  "sogra",
+  "colher",
+  "sete",
+  "alergia",
+  "primeiro",
+  "tudo",
+  "nove",
+  "coragem",
+  "sozinho",
+  "certo",
+  "clique"
+ ],
+ "tail": 1.8,
+ "audio": "audios/a1v2-final.wav",
+ "words": "audios/a1v2-final.words.json",
+ "out": "criativos/c06-sogra-sopinha.mp4",
+ "hook": "ELE NÃO COMIA\\NCOMIGO 😢",
+ "hook_until": 3.2,
+ "end_at": 58.3,
+ "overlays": [
+  {
+   "image": "tools/assets/hero-kit.png",
+   "from": 21.0,
+   "to": 23.3,
+   "y": 190,
+   "w": 880
+  }
+ ],
+ "fix": {
+  "entrava": "trava"
+ },
+ "clips": [
+  {
+   "at": 0.0,
+   "take": "t4",
+   "in": 42.2,
+   "blur": [
+    [
+     0.62,
+     0.76
+    ]
+   ],
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "y": 0.3
+  },
+  {
+   "at": 3.46,
+   "take": "t4",
+   "in": 47.6,
+   "blur": [
+    [
+     0.62,
+     0.76
+    ]
+   ],
+   "zoom": [
+    1.03,
+    1.1
+   ],
+   "y": 0.25,
+   "t": "fadeblack"
+  },
+  {
+   "at": 6.68,
+   "take": "t1",
+   "in": 12.2,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 8.22,
+   "take": "t1",
+   "in": 20.2,
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "at": 12.26,
+   "take": "t4",
+   "in": 31.2,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "y": 0.6
+  },
+  {
+   "at": 15.66,
+   "take": "t1",
+   "in": 3.4,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 18.0,
+   "take": "t3",
+   "in": 13.4,
+   "zoom": [
+    1.02,
+    1.08
+   ]
+  },
+  {
+   "at": 21.08,
+   "src": "antigos/bb5.mp4",
+   "in": 1.0,
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "t": "circleopen"
+  },
+  {
+   "at": 33.04,
+   "src": "antigos/bb5.mp4",
+   "in": 37.2,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 35.38,
+   "src": "antigos/bb5.mp4",
+   "in": 13.0,
+   "speed": 1.9,
+   "zoom": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "at": 46.12,
+   "src": "antigos/bb5.mp4",
+   "in": 36.0,
+   "speed": 0.84,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "t": "fadewhite"
+  },
+  {
+   "at": 54.96,
+   "src": "antigos/bb5.mp4",
+   "in": 31.0,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 58.4,
+   "image": "tools/assets/endcard.png",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "t": "circleopen"
+  }
+ ]
+}

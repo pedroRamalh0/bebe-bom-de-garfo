@@ -1,0 +1,90 @@
+{
+ "trans": 0.25,
+ "music": "musica/life-of-riley.mp3",
+ "music_vol": 0.2,
+ "keywords": [
+  "boca",
+  "cospe",
+  "chora",
+  "papinha",
+  "recusava",
+  "Bebê",
+  "Bom",
+  "Garfo",
+  "300",
+  "idade",
+  "cardápio",
+  "compras",
+  "textura",
+  "engasgo",
+  "alergênicos",
+  "caro",
+  "exatamente",
+  "culpa",
+  "Saiba",
+  "sogra",
+  "colher",
+  "sete",
+  "alergia",
+  "primeiro",
+  "tudo",
+  "nove",
+  "coragem",
+  "sozinho",
+  "certo",
+  "clique"
+ ],
+ "tail": 2.4,
+ "audio": "audios/bb6-voz.wav",
+ "words": "audios/bb6-voz.words.json",
+ "out": "criativos/c05-papinha-de-frango.mp4",
+ "hook": "A PAPINHA QUE ELE\\NNÃO RECUSA 😋",
+ "hook_until": 3.2,
+ "end_at": 31.2,
+ "overlays": [
+  {
+   "image": "tools/assets/hero-kit.png",
+   "from": 9.9,
+   "to": 12.2,
+   "y": 190,
+   "w": 880
+  }
+ ],
+ "clips": [
+  {
+   "at": 0.0,
+   "src": "antigos/bb6.mp4",
+   "in": 0.0,
+   "blur": [
+    [
+     0.44,
+     0.64
+    ]
+   ],
+   "blur_until": 1.1,
+   "zoom": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "at": 28.4,
+   "take": "t1",
+   "in": 25.4,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "t": "fadewhite"
+  },
+  {
+   "at": 31.4,
+   "image": "tools/assets/endcard.png",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "t": "circleopen"
+  }
+ ]
+}
