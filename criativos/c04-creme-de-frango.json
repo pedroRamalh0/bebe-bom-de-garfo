@@ -38,8 +38,6 @@
  "audio": "audios/bb4-voz.wav",
  "words": "audios/bb4-voz.words.json",
  "out": "criativos/c04-creme-de-frango.mp4",
- "hook": "SE SEU BEBÊ CUSPE A\\NPAPINHA, OLHA ISSO 👀",
- "hook_until": 3.4,
  "end_at": 31.2,
  "overlays": [
   {
@@ -53,19 +51,22 @@
  "clips": [
   {
    "at": 0.0,
+   "take": "t1",
+   "in": 13.0,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 2.4,
    "src": "antigos/bb4.mp4",
-   "in": 0.0,
-   "blur": [
-    [
-     0.48,
-     0.68
-    ]
-   ],
-   "blur_until": 1.6,
+   "in": 1.7,
    "zoom": [
     1.0,
     1.0
-   ]
+   ],
+   "speed": 0.946
   },
   {
    "at": 31.4,

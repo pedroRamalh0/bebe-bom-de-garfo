@@ -38,8 +38,6 @@
  "audio": "audios/a1v2-final.wav",
  "words": "audios/a1v2-final.words.json",
  "out": "criativos/c06-sogra-sopinha.mp4",
- "hook": "ELE NÃO COMIA\\NCOMIGO 😢",
- "hook_until": 3.2,
  "end_at": 58.3,
  "overlays": [
   {
@@ -56,36 +54,22 @@
  "clips": [
   {
    "at": 0.0,
-   "take": "t4",
-   "in": 42.2,
-   "blur": [
-    [
-     0.62,
-     0.76
-    ]
-   ],
+   "take": "t1",
+   "in": 1.0,
    "zoom": [
     1.0,
     1.08
-   ],
-   "y": 0.3
+   ]
   },
   {
    "at": 3.46,
-   "take": "t4",
-   "in": 47.6,
-   "blur": [
-    [
-     0.62,
-     0.76
-    ]
-   ],
+   "take": "t1",
+   "in": 9.3,
    "zoom": [
     1.03,
     1.1
    ],
-   "y": 0.25,
-   "t": "fadeblack"
+   "t": "fade"
   },
   {
    "at": 6.68,
@@ -171,7 +155,7 @@
     1.0,
     1.06
    ],
-   "t": "fadewhite"
+   "t": "fade"
   },
   {
    "at": 54.96,

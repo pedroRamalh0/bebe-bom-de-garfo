@@ -38,8 +38,6 @@
  "audio": "audios/bb6-voz.wav",
  "words": "audios/bb6-voz.words.json",
  "out": "criativos/c05-papinha-de-frango.mp4",
- "hook": "A PAPINHA QUE ELE\\NNÃO RECUSA 😋",
- "hook_until": 3.2,
  "end_at": 31.2,
  "overlays": [
   {
@@ -53,15 +51,17 @@
  "clips": [
   {
    "at": 0.0,
+   "take": "t1",
+   "in": 20.2,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 2.4,
    "src": "antigos/bb6.mp4",
-   "in": 0.0,
-   "blur": [
-    [
-     0.44,
-     0.64
-    ]
-   ],
-   "blur_until": 1.1,
+   "in": 1.2,
    "zoom": [
     1.0,
     1.0
@@ -75,7 +75,7 @@
     1.0,
     1.08
    ],
-   "t": "fadewhite"
+   "t": "fade"
   },
   {
    "at": 31.4,

@@ -1,4 +1,5 @@
-"""Montador v2: imagem cheia (sem zoom de recorte), faixas de texto antigo desfocadas, leve push-in em cada cena,
+"""NAO USAR blur nem hook: o usuario reprovou desfoque e tarja preta. Prefira trechos limpos.
+Montador v2: imagem cheia (sem zoom de recorte), faixas de texto antigo desfocadas, leve push-in em cada cena,
 transições suaves (xfade), gancho escrito nos primeiros segundos, legendas no terço inferior e tela final animada.
 
 EDL JSON:
