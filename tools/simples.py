@@ -18,13 +18,19 @@ def src(s):
     if s.startswith(("S1-","S2-","S3-")): return f"{NOVOS}/{s}.mp4"
     return os.path.join(ROOT, s if "/" in s else f"takes/{s}.mp4")
 
-def clip(i, s, t_in, d, z=1.05, yf=0.5):
-    out = f"{TMP}/c{i:03d}.mp4"; p = src(s); sw, sh = size(p); n = max(2, int(round(d * FPS)))
+def clip(i, s, t_in, d, z=1.05, yf=0.5, speed=1.0):
+    out = f"{TMP}/c{i:03d}.mp4"; n = max(2, int(round(d * FPS)))
+    if s.endswith(".png"):  # tela real (imagem 1080x1920) com leve aproximação
+        zp = f"zoompan=z='1+({z}-1)*on/{n}':x='(iw-iw/zoom)/2':y='(ih-ih/zoom)*{yf}':d=1:s={W}x{H}:fps={FPS}"
+        run(["ffmpeg","-v","error","-y","-loop","1","-framerate",str(FPS),"-i",os.path.join(ROOT,s),"-frames:v",str(n),
+             "-vf",f"scale={W}:{H},{zp},format=yuv420p","-c:v","libx264","-preset","veryfast","-crf","16",out]); return out
+    p = src(s); sw, sh = size(p)
     cw, ch = (sw, int(sw * 16 / 9)) if sw * 16 / 9 <= sh else (int(sh * 9 / 16), sh)
     cw -= cw % 2; ch -= ch % 2
     zp = f"zoompan=z='1+({z}-1)*on/{n}':x='(iw-iw/zoom)/2':y='(ih-ih/zoom)*{yf}':d=1:s={W}x{H}:fps={FPS}"
-    run(["ffmpeg","-v","error","-y","-ss",str(t_in),"-t",str(d+0.6),"-i",p,"-vf",
-         f"crop={cw}:{ch}:{(sw-cw)//2}:{int((sh-ch)*yf)},scale={W}:{H}:flags=lanczos,setsar=1,fps={FPS},tpad=stop_mode=clone:stop_duration=3,{zp},eq=saturation=1.1:contrast=1.04,format=yuv420p",
+    sp = f",setpts=PTS/{speed}" if speed != 1.0 else ""
+    run(["ffmpeg","-v","error","-y","-ss",str(t_in),"-t",str(d*speed+0.6),"-i",p,"-vf",
+         f"crop={cw}:{ch}:{(sw-cw)//2}:{int((sh-ch)*yf)},scale={W}:{H}:flags=lanczos,setsar=1{sp},fps={FPS},tpad=stop_mode=clone:stop_duration=3,{zp},eq=saturation=1.1:contrast=1.04,format=yuv420p",
          "-frames:v",str(n),"-an","-c:v","libx264","-preset","veryfast","-crf","16",out]); return out
 
 def ts(t): return f"{int(t//3600)}:{int(t%3600//60):02d}:{t%60:05.2f}"
@@ -41,6 +47,9 @@ WrapStyle: 2
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Cap,Anton,120,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,8,5,5,50,50,0
+Style: Cta,Montserrat Black,46,&H00FFFFFF,&H00FFFFFF,&H001C73E8,&H001C73E8,0,0,0,0,100,100,1,0,3,20,0,5,0,0,0
+Style: Brand,Baloo 2,78,&H002A4417,&H00FFFFFF,&H00FFFFFF,&H00FFFFFF,1,0,0,0,100,100,0,0,3,24,0,5,0,0,0
+Style: Stk,Anton,150,&H00102030,&H00FFFFFF,&H004DD8FF,&H004DD8FF,0,0,0,0,100,100,2,0,3,30,0,5,0,0,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -68,25 +77,30 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             tx = re.sub(r"[.,!]", "", w[2]).lstrip("-").upper()
             parts.append(r"{\c&H004DD8FF&}" + tx + r"{\c&H00FFFFFF&}" if clean(w[2]) in kw else tx)
         ev.append(f"Dialogue: 0,{ts(st)},{ts(en)},Cap,,0,0,0,,{{\\pos(540,{E.get('cap_y',1330)})\\fscx82\\fscy82\\t(0,90,\\fscx106\\fscy106)\\t(90,150,\\fscx100\\fscy100)}}" + " ".join(parts))
+    pop = r"\fscx60\fscy60\t(0,160,\fscx106\fscy106)\t(160,240,\fscx100\fscy100)"
+    for st in E.get("stickers", []):
+        ev.append(f"Dialogue: 3,{ts(st['from'])},{ts(st['to'])},Stk,,0,0,0,,{{\\pos(540,{st.get('y',820)})\\frz{st.get('rot',-4)}{pop}}}{st['text']}")
+    if E.get("brand_from") is not None:
+        ev.append(f"Dialogue: 3,{ts(E['brand_from'])},{ts(total)},Brand,,0,0,0,,{{\\pos(540,300)\\fad(200,0){pop}}}Bebê Bom de Garfo")
+    if E.get("cta_from") is not None:
+        ev.append(f"Dialogue: 3,{ts(E['cta_from'])},{ts(total)},Cta,,0,0,0,,{{\\pos(540,1520)\\fad(200,0)}}TOQUE EM SAIBA MAIS")
     return hdr + "\n".join(ev) + "\n"
 
 def main(p):
     E = json.load(open(p)); audio = os.path.join(ROOT, E["audio"]); total = dur(audio) + E.get("tail", 0.6)
-    cl = E["clips"]; files = []; T = E.get("trans", 0.0); durs = []
+    cl = E["clips"]; files = []; frames = []; FADE = int(round(E.get("trans", 0.3) * FPS))
+    opt = lambda c: c[3] if len(c) > 3 and isinstance(c[3], dict) else {}
+    tr = [0] + [FADE if opt(c).get("tr") == "fade" else 1 for c in cl[1:]]  # quadros de transição na ENTRADA de cada cena
+    edge = [int(round(c[0] * FPS)) for c in cl] + [int(round(total * FPS))]
     for i, c in enumerate(cl):
-        end = cl[i+1][0] if i + 1 < len(cl) else total
-        d = end - c[0] + (T if i + 1 < len(cl) else 0.0); durs.append(d)
-        files.append(clip(i, c[1], c[2], d, *(c[3:] if len(c) > 3 else [])))
-    cat = f"{TMP}/cat.mp4"
-    if T > 0:  # transição suave (fade curto) entre as cenas
-        fc = ""; prev = "0:v"; off = 0.0
-        for i in range(1, len(files)):
-            off += durs[i-1] - T; fc += f"[{prev}][{i}:v]xfade=transition=fade:duration={T}:offset={off:.3f}[x{i}];"; prev = f"x{i}"
-        run(["ffmpeg","-v","error","-y",*sum([["-i", f] for f in files], []),"-filter_complex",fc.rstrip(";"),"-map",f"[{prev}]",
-             "-c:v","libx264","-preset","veryfast","-crf","16","-pix_fmt","yuv420p",cat])
-    else:
-        lst = f"{TMP}/list.txt"; open(lst, "w").write("".join(f"file '{f}'\n" for f in files))
-        run(["ffmpeg","-v","error","-y","-f","concat","-safe","0","-i",lst,"-c","copy",cat])
+        n = edge[i+1] - edge[i] + (tr[i+1] if i + 1 < len(cl) else 0); frames.append(n); o = opt(c)
+        files.append(clip(i, c[1], c[2], n / FPS, o.get("z", 1.05), o.get("yf", 0.5), o.get("speed", 1.0)))
+    cat = f"{TMP}/cat.mp4"; fc = ""; prev = "0:v"; acc = 0
+    for i in range(1, len(files)):
+        acc += frames[i-1] - tr[i]
+        fc += f"[{prev}][{i}:v]xfade=transition=fade:duration={tr[i]/FPS:.5f}:offset={acc/FPS:.5f}[x{i}];"; prev = f"x{i}"
+    run(["ffmpeg","-v","error","-y",*sum([["-i", f] for f in files], []),"-filter_complex",fc.rstrip(";"),"-map",f"[{prev}]",
+         "-c:v","libx264","-preset","veryfast","-crf","16","-pix_fmt","yuv420p",cat])
     subs = f"{TMP}/subs.ass"; open(subs, "w").write(ass(E, json.load(open(os.path.join(ROOT, E["words"])))["words"], total))
     mv = E.get("music_vol", 0.18)
     fc = (f"[0:v]ass={subs}:fontsdir={os.path.join(ROOT,'tools','fonts')}[v];"
