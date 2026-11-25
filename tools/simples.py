@@ -18,7 +18,7 @@ def src(s):
     if s.startswith(("S1-","S2-","S3-")): return f"{NOVOS}/{s}.mp4"
     return os.path.join(ROOT, s if "/" in s else f"takes/{s}.mp4")
 
-def clip(i, s, t_in, d, z=1.06, yf=0.5):
+def clip(i, s, t_in, d, z=1.05, yf=0.5):
     out = f"{TMP}/c{i:03d}.mp4"; p = src(s); sw, sh = size(p); n = max(2, int(round(d * FPS)))
     cw, ch = (sw, int(sw * 16 / 9)) if sw * 16 / 9 <= sh else (int(sh * 9 / 16), sh)
     cw -= cw % 2; ch -= ch % 2
@@ -72,12 +72,21 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 def main(p):
     E = json.load(open(p)); audio = os.path.join(ROOT, E["audio"]); total = dur(audio) + E.get("tail", 0.6)
-    cl = E["clips"]; files = []
+    cl = E["clips"]; files = []; T = E.get("trans", 0.0); durs = []
     for i, c in enumerate(cl):
         end = cl[i+1][0] if i + 1 < len(cl) else total
-        files.append(clip(i, c[1], c[2], end - c[0], *(c[3:] if len(c) > 3 else [])))
-    lst = f"{TMP}/list.txt"; open(lst, "w").write("".join(f"file '{f}'\n" for f in files))
-    cat = f"{TMP}/cat.mp4"; run(["ffmpeg","-v","error","-y","-f","concat","-safe","0","-i",lst,"-c","copy",cat])
+        d = end - c[0] + (T if i + 1 < len(cl) else 0.0); durs.append(d)
+        files.append(clip(i, c[1], c[2], d, *(c[3:] if len(c) > 3 else [])))
+    cat = f"{TMP}/cat.mp4"
+    if T > 0:  # transição suave (fade curto) entre as cenas
+        fc = ""; prev = "0:v"; off = 0.0
+        for i in range(1, len(files)):
+            off += durs[i-1] - T; fc += f"[{prev}][{i}:v]xfade=transition=fade:duration={T}:offset={off:.3f}[x{i}];"; prev = f"x{i}"
+        run(["ffmpeg","-v","error","-y",*sum([["-i", f] for f in files], []),"-filter_complex",fc.rstrip(";"),"-map",f"[{prev}]",
+             "-c:v","libx264","-preset","veryfast","-crf","16","-pix_fmt","yuv420p",cat])
+    else:
+        lst = f"{TMP}/list.txt"; open(lst, "w").write("".join(f"file '{f}'\n" for f in files))
+        run(["ffmpeg","-v","error","-y","-f","concat","-safe","0","-i",lst,"-c","copy",cat])
     subs = f"{TMP}/subs.ass"; open(subs, "w").write(ass(E, json.load(open(os.path.join(ROOT, E["words"])))["words"], total))
     mv = E.get("music_vol", 0.18)
     fc = (f"[0:v]ass={subs}:fontsdir={os.path.join(ROOT,'tools','fonts')}[v];"
