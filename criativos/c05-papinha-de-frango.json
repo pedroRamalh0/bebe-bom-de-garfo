@@ -34,16 +34,16 @@
   "certo",
   "clique"
  ],
- "tail": 2.4,
- "audio": "audios/bb6-voz.wav",
- "words": "audios/bb6-voz.words.json",
+ "tail": 2.2,
+ "audio": "audios/r3-final.wav",
+ "words": "audios/r3-final.words.json",
  "out": "criativos/c05-papinha-de-frango.mp4",
- "end_at": 31.2,
+ "end_at": 24.0,
  "overlays": [
   {
    "image": "tools/assets/hero-kit.png",
-   "from": 9.9,
-   "to": 12.2,
+   "from": 18.5,
+   "to": 20.9,
    "y": 190,
    "w": 880
   }
@@ -51,6 +51,52 @@
  "clips": [
   {
    "at": 0.0,
+   "src": "antigos/bb6.mp4",
+   "in": 1.2,
+   "zoom": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "at": 5.18,
+   "take": "t1",
+   "in": 13.0,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 7.46,
+   "take": "t4",
+   "in": 31.2,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "y": 0.6
+  },
+  {
+   "at": 9.8,
+   "src": "antigos/bb6.mp4",
+   "in": 22.0,
+   "zoom": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "at": 11.4,
+   "src": "antigos/bb6.mp4",
+   "in": 24.6,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 12.94,
    "take": "t1",
    "in": 20.2,
    "zoom": [
@@ -59,26 +105,34 @@
    ]
   },
   {
-   "at": 2.4,
+   "at": 15.28,
    "src": "antigos/bb6.mp4",
-   "in": 1.2,
+   "in": 13.0,
    "zoom": [
     1.0,
-    1.0
+    1.04
    ]
   },
   {
-   "at": 28.4,
-   "take": "t1",
-   "in": 25.4,
+   "at": 18.52,
+   "src": "antigos/bb6.mp4",
+   "in": 17.5,
    "zoom": [
     1.0,
-    1.08
-   ],
-   "t": "fade"
+    1.04
+   ]
   },
   {
-   "at": 31.4,
+   "at": 21.0,
+   "src": "antigos/bb6.mp4",
+   "in": 26.5,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "at": 24.02,
    "image": "tools/assets/endcard.png",
    "zoom": [
     1.0,
@@ -86,5 +140,9 @@
    ],
    "t": "circleopen"
   }
- ]
+ ],
+ "fix": {
+  "6": "6º",
+  "grau": ""
+ }
 }
