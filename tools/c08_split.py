@@ -8,7 +8,8 @@ TMP = os.environ.get("TMPDIR_BBG", "/tmp/bbg_c08"); os.makedirs(TMP, exist_ok=Tr
 W, H, FPS, T = 1080, 1920, 30, 0.2
 AUDIO = os.path.join(ROOT, "audios/r3v2-final.wav")
 WORDS = json.load(open(os.path.join(ROOT, "audios/r3v2-final.words.json")))["words"]
-OUT = os.path.join(ROOT, "criativos/c08-errado-x-certo.mp4")
+OUT = os.path.join(ROOT, os.environ.get("OUT_C08", "criativos/c08-errado-x-certo.mp4"))
+HOOK = os.environ.get("HOOK", "")
 CREAM = "0xF6EEE1"
 
 def run(c): subprocess.run(c, check=True)
@@ -58,10 +59,11 @@ def still(img, d, z=(1.0, 1.04)):
 VOICE = dur(AUDIO); TAIL = 1.4; TOTAL = VOICE + TAIL
 B = [0.0, 5.4, 7.9, 14.9, 18.5, 23.95, TOTAL]           # fronteiras dos blocos
 D = [B[i+1] - B[i] + (T if i < 5 else 0) for i in range(6)]
+HOOKS = {"prato": ("t4", 31.2, "t1", 12.6), "bebe": ("t1", 13.0, "t1", 20.0)}
 segs = [
-  grid([("t3",60.2),("t5",53.0),("t8",8.0),("antigos/bb6.mp4",8.0),("t6",50.0),("t7",19.5),("t2",46.0),("antigos/bb4.mp4",12.0),("t2",23.5)], D[0],
+  seq([(HOOKS[HOOK][0], HOOKS[HOOK][1], 2.8, 0.6), ("t5", 53.0, D[0] - 2.8, 0.5)], W, H) if HOOK else grid([("t3",60.2),("t5",53.0),("t8",8.0),("antigos/bb6.mp4",8.0),("t6",50.0),("t7",19.5),("t2",46.0),("antigos/bb4.mp4",12.0),("t2",23.5)], D[0],
        [0.0,0.0,0.0,0.15,0.3,0.45,0.6,0.75,0.9]),
-  full("t1", 12.6, D[1]),
+  full(HOOKS[HOOK][2] if HOOK else "t1", HOOKS[HOOK][3] if HOOK else 12.6, D[1]),
   split([("t4",31.2,2.65,0.65),("t6",29.3,2.0,0.5),("t6",37.3,2.55,0.5)], [("t1",0.3,4.7,0.35),("t1",20.0,2.5,0.35)], D[2], "0xC0392B"),
   full("t3", 13.2, D[3], 0.35),
   split([("t5",26.0,2.9,0.6),("t2",37.0,1.4,0.6),("t2",52.4,1.35,0.6)], [("antigos/bb5.mp4",37.2,2.6,0.3),("antigos/bb5.mp4",39.8,3.05,0.3)], D[4], "0x2E9E5B"),

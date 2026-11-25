@@ -17,7 +17,7 @@ h1{font-family:Fraunces;font-weight:600;font-size:96px;line-height:1;text-align:
 <img class="kit" src="${b64("kit-completo.png")}">
 <div class="price"><span class="old">R$185</span><span class="new">R$27,90</span></div>
 <div class="btn">TOQUE EM SAIBA MAIS 👇</div>
-<div class="s">Acesso imediato · Garantia de 7 dias</div>
+<div class="s">Acesso imediato · Garantia de 30 dias</div>
 <script>document.fonts.ready.then(()=>window.__r=1)</script></body></html>`;
 (async () => {
   const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
