@@ -4,6 +4,30 @@ Regras: as 2 primeiras linhas aparecem antes do "ver mais" (~125 caracteres), en
 Sem escassez falsa. Fatos usados: 300 receitinhas separadas por idade, 7 bônus, a partir de R$17,90 (Completo R$27,90),
 acesso imediato no celular, garantia de 7 dias. CTA do botão: "Saiba mais".
 
+## TEXTO GERAL (usar em todos os criativos)
+
+Seu bebê enjoou da papinha ou começou a recusar? 🥄
+Quase sempre não é ele: são as mesmas 2 ou 3 receitas, na textura errada pra idade.
+
+Do 6º mês aos 3 anos são mais de 2 mil refeições, e ninguém te entrega um caminho pronto.
+
+No Bebê Bom de Garfo você abre a fase do seu bebê e já encontra:
+✅ a receita
+✅ a textura certa pra idade (do purê ao pedacinho)
+✅ o cardápio da semana montado
+
+São 300 receitinhas separadas por idade + 7 bônus (SOS engasgo, cortes seguros, congelamento, alergênicos, sopinhas, lista de compras e cardápios semanais).
+
+📱 Acesso imediato no celular
+🛡️ Garantia de 7 dias
+💚 Por menos de R$30
+
+Toque em "Saiba mais" e veja as receitinhas da fase do seu bebê 👇
+
+Título: 300 receitinhas separadas por idade
+Descrição: Acesso imediato · Garantia de 7 dias
+Botão: Saiba mais
+
 ## Texto 1 · Mecanismo "2 mil refeições" (C08 errado x certo; serve no C05)
 
 Do 6º mês aos 3 anos, o bebê faz mais de 2 mil refeições. 🍽️
