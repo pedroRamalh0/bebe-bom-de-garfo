@@ -60,16 +60,17 @@ plin = os.path.join(TMP, "plin.wav"); w_ = wave.open(plin, "w"); w_.setnchannels
 w_.writeframes((pl * 32767).astype(np.int16).tobytes()); w_.close()
 
 # 4) legenda
-total = montar2.dur(video)
+VEND = float(os.environ.get("VIDEO_END", montar2.dur(video))); HOLD = round(montar2.dur(video) + 0.6 - VEND, 3)
+total = VEND + HOLD
 subs = os.path.join(TMP, "subs.ass")
 open(subs, "w").write(montar2.ass({"keywords": kw}, json.load(open(words))["words"], total))
 
 # 5) composição: vídeo original intacto + card + legenda; áudio original + plin
 fonts = os.path.join(ROOT, "tools", "fonts")
-fc = (f"[0:v]scale=1080:1920:flags=lanczos,setsar=1[v0];"
+fc = (f"[0:v]trim=end={VEND},setpts=PTS-STARTPTS,scale=1080:1920:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration={HOLD}[v0];"
       f"[1:v]setpts=PTS+{t0}/TB[an];[v0][an]overlay=0:170:eof_action=pass:enable='between(t,{t0},{t0+d})'[v1];"
       f"[v1]ass={subs}:fontsdir={fonts}[v];"
-      f"[2:a]adelay={int(t0*1000)}|{int(t0*1000)},volume=0.9[p];[0:a][p]amix=inputs=2:normalize=0:duration=first[a]")
+      f"[2:a]adelay={int(t0*1000)}|{int(t0*1000)},volume=0.9[p];[0:a]apad=pad_dur=0.6[oa];[oa][p]amix=inputs=2:normalize=0:duration=first[a]")
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", video, "-i", anim, "-i", plin, "-filter_complex", fc,
                 "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
                 "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", out], check=True)

@@ -73,6 +73,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         cur.append(w)
         if len(cur) >= 3 or len(" ".join(x[2] for x in cur)) >= 13 or re.search(r"[.,?!]$", w[2]): lines.append(cur); cur = []
     if cur: lines.append(cur)
+    # nunca deixa uma palavra sozinha: junta com a linha anterior se ela não terminou frase
+    merged = []
+    for ln in lines:
+        if merged and len(ln) == 1 and not re.search(r"[.?!]$", merged[-1][-1][2]) and len(merged[-1]) <= 3:
+            merged[-1] = merged[-1] + ln
+        else:
+            merged.append(ln)
+    lines = merged
     ev = []
     if E.get("hook"):
         ev.append(f"Dialogue: 2,{t_ass(0)},{t_ass(E.get('hook_until',3.2))},Hook,,0,0,0,,{{\\fad(120,200)}}{E['hook']}")
