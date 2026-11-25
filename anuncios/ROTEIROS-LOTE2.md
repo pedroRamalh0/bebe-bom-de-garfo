@@ -1,7 +1,7 @@
 # Roteiros · Lote 2 (3 criativos, ~30 s cada, 9:16)
 
 Fatos usados: 300 receitinhas separadas por idade (6 meses · 7–8 · 9–11 · 1–3 anos), textura certa por fase,
-cardápios semanais, lista de compras, guia de congelamento, 7 bônus, menos de R$30, garantia de 7 dias.
+cardápios semanais, lista de compras, guia de congelamento, 7 bônus, menos de R$30, garantia de 30 dias.
 
 ## R4 · "Liquidificador" (mecanismo da textura)
 GANCHO: Se o seu bebê já passou dos 7 meses e você ainda bate a papinha no liquidificador, presta atenção.
@@ -35,7 +35,7 @@ GANCHO: Todo dia a mesma pergunta: o que eu vou dar pro meu bebê hoje?
 Aí você abre o Instagram, salva dez receitas, não faz nenhuma e acaba repetindo a papinha de ontem.
 Não é falta de vontade. É que receita solta na internet não diz se serve pra idade do seu bebê, nem qual textura usar.
 Com o Bebê Bom de Garfo é diferente: você abre a fase do seu bebê, 6 meses, 7 a 8, 9 a 11 ou 1 a 3 anos, e já tem a receita, a textura e o passo a passo.
-São 300 receitinhas e 7 bônus, com garantia de 7 dias.
+São 300 receitinhas e 7 bônus, com garantia de 30 dias.
 Tudo por menos de 30 reais. Toca em saiba mais.
 Ganchos alternativos:
 - Se você já salvou mil receitas de papinha e não fez nenhuma, esse vídeo é pra você.

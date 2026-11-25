@@ -2,7 +2,7 @@
 
 Regras: as 2 primeiras linhas aparecem antes do "ver mais" (~125 caracteres), então o gancho vai ali.
 Sem escassez falsa. Fatos usados: 300 receitinhas separadas por idade, 7 bônus, a partir de R$17,90 (Completo R$27,90),
-acesso imediato no celular, garantia de 7 dias. CTA do botão: "Saiba mais".
+acesso imediato no celular, garantia de 30 dias. CTA do botão: "Saiba mais".
 
 ## TEXTO GERAL (usar em todos os criativos)
 
@@ -19,13 +19,13 @@ No Bebê Bom de Garfo você abre a fase do seu bebê e já encontra:
 São 300 receitinhas separadas por idade + 7 bônus (SOS engasgo, cortes seguros, congelamento, alergênicos, sopinhas, lista de compras e cardápios semanais).
 
 📱 Acesso imediato no celular
-🛡️ Garantia de 7 dias
+🛡️ Garantia de 30 dias
 💚 Por menos de R$30
 
 Toque em "Saiba mais" e veja as receitinhas da fase do seu bebê 👇
 
 Título: 300 receitinhas separadas por idade
-Descrição: Acesso imediato · Garantia de 7 dias
+Descrição: Acesso imediato · Garantia de 30 dias
 Botão: Saiba mais
 
 ## Texto 1 · Mecanismo "2 mil refeições" (C08 errado x certo; serve no C05)
@@ -45,7 +45,7 @@ No Bebê Bom de Garfo você abre a fase do seu bebê e já encontra:
 São 300 receitinhas separadas por idade + 7 bônus (SOS engasgo, cortes seguros, congelamento, alergênicos, sopinhas, lista de compras e cardápios semanais).
 
 📱 Acesso imediato no celular
-🛡️ Garantia de 7 dias
+🛡️ Garantia de 30 dias
 💚 Por menos de R$30
 
 Toque em "Saiba mais" e veja as receitinhas da fase do seu bebê 👇
@@ -66,7 +66,7 @@ Por isso existe o Bebê Bom de Garfo:
 🧊 guia de congelamento pra cozinhar 1x e servir a semana toda
 🚨 SOS engasgo e cortes seguros
 
-Tudo no celular, acesso na hora, por menos de R$30. E se não gostar, tem 7 dias de garantia.
+Tudo no celular, acesso na hora, por menos de R$30. E se não gostar, tem 30 dias de garantia.
 
 👇 Toque em "Saiba mais"
 
@@ -86,7 +86,7 @@ Juntei tudo que funciona no Bebê Bom de Garfo:
 ✅ textura certa pra cada fase
 ✅ 7 bônus: SOS engasgo, cortes seguros, alergênicos, congelamento e mais
 
-Acesso imediato no celular · Garantia de 7 dias · Menos de R$30
+Acesso imediato no celular · Garantia de 30 dias · Menos de R$30
 
 Toque em "Saiba mais" 👇
 
@@ -95,14 +95,14 @@ Toque em "Saiba mais" 👇
 Seu bebê enjoou da papinha? 🥄
 Não é ele. Normalmente são as mesmas 3 receitas na textura errada pra idade.
 
-300 receitinhas separadas por idade + cardápio da semana pronto. Acesso imediato, garantia de 7 dias, menos de R$30. 👇
+300 receitinhas separadas por idade + cardápio da semana pronto. Acesso imediato, garantia de 30 dias, menos de R$30. 👇
 
 ## Texto 5 · Curto, objeção "não tenho tempo"
 
 Cozinha 1 vez, serve a semana toda. 🧊
 300 receitinhas de bebê separadas por idade, com textura certa, cardápio semanal e guia de congelamento.
 
-Do 1º purê aos 3 anos. Acesso na hora no celular · garantia de 7 dias · menos de R$30 👇
+Do 1º purê aos 3 anos. Acesso na hora no celular · garantia de 30 dias · menos de R$30 👇
 
 ## Títulos (headline, até ~40 caracteres)
 
@@ -114,7 +114,7 @@ Do 1º purê aos 3 anos. Acesso na hora no celular · garantia de 7 dias · meno
 
 ## Descrições (aparecem em alguns posicionamentos)
 
-1. Acesso imediato · Garantia de 7 dias
+1. Acesso imediato · Garantia de 30 dias
 2. + 7 bônus inclusos
 3. Menos de R$30 · acesso no celular
 
